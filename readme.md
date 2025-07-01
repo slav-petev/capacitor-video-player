@@ -2,7 +2,7 @@
 <h3 align="center">Video Player</h3>
 <p align="center"><strong><code>capacitor-video-player</code></strong></p>
 <br>
-<p align="center" style="font-size:50px;color:red"><strong>CAPACITOR 6</strong></p><br>
+<p align="center" style="font-size:50px;color:red"><strong>CAPACITOR 7</strong></p><br>
 <br>
 <p align="center" style="font-size:20px;color:red"><a href="https://github.com/jepiqueau/capacitor-video-player/blob/master/docs/Jean_Pierre_Queau.md"><strong>Special note from Jean Pierre Quéau the original founder of this project.</strong></a></p>
 <br>
@@ -33,7 +33,7 @@
 | Harmon Wood       | [harmonwood](https://github.com/harmonwood) |        | ✅     |
 | Quéau Jean Pierre | [jepiqueau](https://github.com/jepiqueau)   |        | ❌     |
 
-## LATEST FOR CAPACITOR 6 (main)
+## LATEST FOR CAPACITOR 7 (main)
 
 ## Browser Support
 
