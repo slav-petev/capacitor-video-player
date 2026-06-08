@@ -47,7 +47,8 @@
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "test": "echo \"No test specified\"",
-    "prepublishOnly": "npm run build && npm run docgen"
+    "prepublishOnly": "npm run build && npm run docgen",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@capacitor/android": "^7.0.0",
