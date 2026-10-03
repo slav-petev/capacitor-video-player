@@ -12,7 +12,7 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "CapacitorVideoPlayer.podspec"
+    "Package.swift"
   ],
   "author": "Jean Pierre Quéau",
   "license": "MIT",

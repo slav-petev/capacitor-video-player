@@ -10,7 +10,28 @@ import UIKit
 @objc(CapacitorVideoPlayerPlugin)
 // swiftlint:disable file_length
 // swiftlint:disable type_body_length
-public class CapacitorVideoPlayerPlugin: CAPPlugin {
+public class CapacitorVideoPlayerPlugin: CAPPlugin, CAPBridgedPlugin {
+    public let identifier = "CapacitorVideoPlayerPlugin"
+    public let jsName = "CapacitorVideoPlayer"
+
+    public let pluginMethods: [CAPPluginMethod] = [
+        CAPPluginMethod(name: "echo", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "initPlayer", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "isPlaying", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "play", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "pause", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "getDuration", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "getCurrentTime", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "setCurrentTime", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "getVolume", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "setVolume", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "getMuted", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "setMuted", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "stopAllPlayers", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "getRate", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "setRate", returnType: CAPPluginReturnPromise)
+    ]
+
     public var call: CAPPluginCall?
     public var videoPlayer: AVPlayerViewController?
     public var bgPlayer: AVPlayer?
